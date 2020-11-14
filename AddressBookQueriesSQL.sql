@@ -43,6 +43,10 @@ select * from AddressBookTable where city='New York City';
 select * from AddressBookTable where state='West Bengal';
 --UC6_RetrievedContactUsingCityOrState
 
+select state,COUNT(firstName) as count from AddressBookTable group by state;
+select city,COUNT(firstName) as count from AddressBookTable group by city;
+--UC7_GotCountOfContactsByCityAndState
+
 
 
 

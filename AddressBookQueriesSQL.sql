@@ -47,6 +47,10 @@ select state,COUNT(firstName) as count from AddressBookTable group by state;
 select city,COUNT(firstName) as count from AddressBookTable group by city;
 --UC7_GotCountOfContactsByCityAndState
 
+select * from AddressBookTable where city='New York City' order by firstName;
+select * from AddressBookTable where city='Mumbai' order by firstName;
+select * from AddressBookTable where city='San Francisco' order by firstName;
+--UC8_SortedAlphabeticallyNamesForEachCity
 
 
 

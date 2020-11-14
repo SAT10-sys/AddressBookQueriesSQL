@@ -52,6 +52,13 @@ select * from AddressBookTable where city='Mumbai' order by firstName;
 select * from AddressBookTable where city='San Francisco' order by firstName;
 --UC8_SortedAlphabeticallyNamesForEachCity
 
+alter table AddressBookTable add addressBookName varchar(20);
+alter table AddressBookTable add addressBookType varchar(20);
+update AddressBookTable set addressBookName='Book1', addressBookType='Family' where firstName='Sachin' or firstName='Rajat' or firstName='Satantra';
+update AddressBookTable set addressBookName='Book2', addressBookType='Friends' where firstName='James' or firstName='Kirk' or firstName='Mike';
+update AddressBookTable set addressBookName='Book3', addressBookType='Job' where firstName='Rohit' or firstName='Cliff';
+select * from AddressBookTable
+--UC9_AddedNameAndTypeOfAddressBookAndAssignedContacts
 
 
 

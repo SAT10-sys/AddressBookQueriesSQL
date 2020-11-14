@@ -35,6 +35,13 @@ update AddressBookTable set address='Worli' where firstName='Sachin' or firstNam
 select * from AddressBookTable
 --UC4_TableUpdatedBasedOnName
 
+delete from AddressBookTable where firstName='Lars';
+select * from AddressBookTable
+--UC5_DeletedContactUsingName
+
+
+
+
 
 
 

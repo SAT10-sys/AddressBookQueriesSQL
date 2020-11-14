@@ -39,6 +39,9 @@ delete from AddressBookTable where firstName='Lars';
 select * from AddressBookTable
 --UC5_DeletedContactUsingName
 
+select * from AddressBookTable where city='New York City';
+select * from AddressBookTable where state='West Bengal';
+--UC6_RetrievedContactUsingCityOrState
 
 
 

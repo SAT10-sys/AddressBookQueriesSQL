@@ -63,3 +63,9 @@ select * from AddressBookTable
 select addressBookType,COUNT(firstName) as count from AddressBookTable group by addressBookType;
 --UC10_GotCountByType
 
+
+insert into AddressBookTable values
+('James','Hetfield','DownTown','San Francisco','California','123456','1234567890','jher@yahoo.com','Book1','Family')
+select * from AddressBookTable
+--UC11_AddedAsFamilyAndFriend
+

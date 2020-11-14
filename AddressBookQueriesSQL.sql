@@ -60,6 +60,6 @@ update AddressBookTable set addressBookName='Book3', addressBookType='Job' where
 select * from AddressBookTable
 --UC9_AddedNameAndTypeOfAddressBookAndAssignedContacts
 
-
-
+select addressBookType,COUNT(firstName) as count from AddressBookTable group by addressBookType;
+--UC10_GotCountByType
 

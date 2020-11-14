@@ -29,3 +29,12 @@ insert into AddressBookTable values
 ('Rohit','Sharma','Andheri','Mumbai','Maharashtra','134567','9999999999','rt264@yahoo.com');
 select * from AddressBookTable
 --UC3_ValuesInsertedInTable
+
+update AddressBookTable set phoneNumber='1234567890' where firstName='James' and lastName='Hetfield';
+update AddressBookTable set address='Worli' where firstName='Sachin' or firstName='Rohit';
+select * from AddressBookTable
+--UC4_TableUpdatedBasedOnName
+
+
+
+
